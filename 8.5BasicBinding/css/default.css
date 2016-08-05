@@ -1,0 +1,24 @@
+﻿#basicBindingInputs li
+{
+    list-style: none;
+}
+
+#basicBindingInputs ol
+{
+    display: inline-block;
+    vertical-align: top;
+}
+
+#basicBindingInputs label
+{
+    width: 4em;
+    margin-right: 0.5em;
+    float: left;
+    text-align: right;
+}
+
+#basicBindingColorInputList input[type="text"]
+{
+    width: 4em;
+}
+

@@ -1,0 +1,64 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>_8.5BasicBinding</title>
+    <link href="lib/winjs-4.0.1/css/ui-light.css" rel="stylesheet" />
+    <script src="lib/winjs-4.0.1/js/base.js"></script>
+    <script src="lib/winjs-4.0.1/js/ui.js"></script>
+    <link href="css/default.css" rel="stylesheet" />
+    <script src="js/main.js"></script>
+</head>
+
+<body class="win-type-body">
+    <div id="basicBindingInputs">
+        <!--输入绑定数据的text-->
+        <ol id="basicBindingTextInputList">
+            <li>
+                <label for="basicBindingInputText">
+                    Text:
+                </label>
+                <input class="win-textbox" type="text" id="basicBindingInputText" />
+            </li>
+        </ol>
+        <!--输入红绿蓝值的text-->
+        <ol id="basicBindingColorInputList">
+            <!--红-->
+            <li>
+                <label for="basicBindingInputRed">
+                    Red:
+                </label>
+                <input class="win-textbox" type="text" id="basicBindingInputRed" />
+            </li>
+            <!--绿-->
+            <li>
+                <label for="basicBindingInputGreen">
+                    Green:
+                </label>
+                <input class="win-textbox" type="text" id="basicBindingInputGreen" />
+            </li>
+            <!--蓝-->
+            <li>
+                <label for="basicBindingInputBlue">
+                    Blue:
+                </label>
+                <input class="win-textbox" type="text" id="basicBindingInputBlue" />
+            </li>
+        </ol>
+    </div>
+
+    <div id="basicBindingOutput">
+        <p>
+            The text you entered was <span data-win-bind="innerHTML: text"></span>，
+            The value for red is<span data-win-bind="innerHTML: color.red"></span>,
+            the value for green is <span data-win-bind="innerHTML: color['green']"></span>, 
+            and blue is <span data-win-bind="innerHTML: color.blue"></span>.
+        </p>
+        <p data-win-bind="style.background: color BasicBinding.toCssColor">
+            And here's your color as a background.
+        </p>
+    </div>
+
+
+</body>
+</html>
